@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+        <title>Forums</title>
+        <link rel="icon" href="images/landing_images/pythomy.ico">
+        <link href="fonts/material_icons/material-icons.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+        <link rel="stylesheet" type="text/css" href="css/commons.css">
+        <style>
+          #forums li {
+            padding-left: 16px;
+            padding-right: 16px;
+            padding-bottom: 16px;
+            padding-top: 16px;
+          }
+        </style>
+</head>
+
+<body>
+  <nav class="nav-extended">
+    <div class="nav-wrapper">
+      <a id="logo-container" href="#loginmodal" class="brand-logo modal-trigger">
+        <div class="row">
+            <div class="col s1"><img src="images/landing_images/PythoMy Logo.png" width="60" height="60"></div>
+            <div class="col s1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PythoMy</div>
+        </div>
+      </a>
+    </div>
+  </nav>
+
+  <div class="section">
+    <div class="container">
+      <h3>Forums</h3>
+      <div class="card">
+        <p style="text-align:center; font-size:24px; cursor:pointer;"><b><a data-target="forumAdd" class="modal-trigger"><i class="material-icons prefix">add</i> Add Forum</a></b></p>
+      </div>
+      <div class="card">
+        <ul style="list-style-type: none;" id="forums">
+          
+        </ul>
+      </div>
+    </div>
+    <!-- Modal Structure -->
+      <div id="forumAdd" class="modal">
+        <div class="modal-content">
+          <h3>Add Forum</h3>
+          <div class="row">
+            <div class="col s12">
+              <div class='input-field col s12'>
+                <textarea class='materialize-textarea auto-lines-expand-secondary' required id='fld_title'></textarea>
+                <label for='fld_title'>Title<sup>*</sup></label>
+              </div>
+            </div>
+            <div class="col s12">
+              <div class='input-field col s12'>
+                <textarea class='materialize-textarea auto-lines-expand' required id='fld_body'></textarea> 
+                <label for='fld_body'>Body<sup>*</sup></label>
+              </div>
+            </div>
+          </div>
+          <div class='row col s10 offset-s1'>
+            <center>
+                <button id="btnAddForum" class='col s12 btn btn-large waves-effect darken-3' onclick="postForum()">Add Forum</button>
+            </center>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+        </div>
+      </div>
+
+  </div>
+
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script type="text/javascript" src="js/main/forums.js"></script>
+</body>
+
+</html>

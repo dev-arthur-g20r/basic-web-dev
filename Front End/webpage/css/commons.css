@@ -1,0 +1,174 @@
+.forumItem {
+  color: black;
+  list-style-type: none;
+}
+
+p {
+  color: black!important;
+}
+.light-blue {
+  background-color: #0fbcf9!important;
+}
+nav {
+  background-color: #0fbcf9!important;
+}
+.nav-content {
+  background-color: #0fbcf9!important;
+}
+.col.s6 > .btn {
+  width: 100%;
+  background-color:#0fbcf9;
+}
+.col.s12 > .btn {
+  width: 100%;
+  background-color:#0fbcf9;
+}
+.code_or_output {
+  color:white!important;
+  font-family:"Courier";
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+.code {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    height:335px!important;
+    width:100%!important;
+    margin:0px!important;
+    background-color:black!important;
+    color:white!important;
+    font-family:"Courier"!important;
+   
+}
+video {
+  width: 100%;
+  height: auto;
+}
+.responsive-img {
+  width: 100%;
+  height: auto;
+}
+
+.brand-center-logo {
+  height: 70px!important; 
+  width: 70px!important;
+}
+
+.circle {
+    height:auto;
+    width:50%!important;
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .circle {
+    width: 25%!important;
+    height: auto!important;
+  }
+}
+
+.slider .indicators .indicator-item {
+  display: none!important;
+}
+
+.centered img {
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+}
+body, html, .slider, .slides{
+    height:100%!important;
+}
+.indicators {
+    z-index:9999;
+    bottom:30px!important;
+}
+.slider .slides li:after {
+    display: block;
+    content: "";
+    background: rgba(0,0,0,0.5);
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+.slider .slides li .caption {
+    z-index: 1;
+}
+.no-dropdown {
+  padding: 0 15px;
+}
+.dropdown-content {
+  width: 200px!important;
+  display: inline-block!important;
+}
+.auto-lines-expand {
+  min-height: 10rem!important;
+}
+.auto-lines-expand-secondary {
+  min-height: 5rem!important;
+}
+nav ul a {
+  padding: 0 15px 0 45px;
+}
+
+.center-vertical-text {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  font-size: large!important;
+}
+.center-h5 {
+  text-align: center;
+  font-size: 1.64rem!important;
+}
+.center-p {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+.img-centered {
+  display:block; 
+  height:auto; 
+  width:50%; 
+  margin-left:auto; 
+  margin-right:auto;
+}
+.s12 > .btn {
+  margin-bottom: 8px;
+}
+#btnEvaluate {
+  width: 100%;
+}
+.team-member {
+  text-align: center;
+  color: white!important;
+}
+.carousel.review-carousel .indicators .indicator-item {
+  background-color: rgba(15, 188, 249, 0.2)!important;
+  bottom: -48px!important;
+}
+.carousel.review-carousel .indicators .indicator-item.active {
+  background-color: #0fbcf9!important;
+  bottom: -48px!important;
+}
+.carousel.review-carousel {
+  min-height: 600px;
+}
+
+.review-carousel .carousel-item
+{
+  background-size : cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.disclaimer {
+  display: none;
+}
