@@ -72,6 +72,51 @@
         </div>
       </div>
 
+      <div id="forumEdit" class="modal">
+        <div class="modal-content">
+          <h3>Edit Forum</h3>
+          <div class="row">
+            <div class="col s12">
+              <div class='input-field col s12'>
+                <textarea class='materialize-textarea auto-lines-expand-secondary' required id='titleToEdit'></textarea>
+                <label for='titleToEdit'>Title<sup>*</sup></label>
+              </div>
+            </div>
+            <div class="col s12">
+              <div class='input-field col s12'>
+                <textarea class='materialize-textarea auto-lines-expand' required id='bodyToEdit'></textarea> 
+                <label for='bodyToEdit'>Body<sup>*</sup></label>
+              </div>
+            </div>
+            <input type="hidden" id="forumID"/>
+          </div>
+          <div class='row col s10 offset-s1'>
+            <center>
+                <button id="editButton" class='col s12 btn btn-large waves-effect darken-3' onclick="updateForum()">Update</button>
+            </center>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+        </div>
+      </div>
+
+      <div id="forum" class="modal">
+        <div class="modal-content">
+          <h4 id="title"></h4>
+          <p><b>Created by:</b> <span id="creator"></span></p>
+          <p id="timestamp"></p>
+          <p id="body"></p><br>
+          <h5>Comments (<span id="numberOfComments"></span>)</h5>
+          <ul id="forumComments" style="list-style-type:none">
+            
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <a class="modal-close waves-effect waves-green btn-flat">Close</a>
+        </div>
+      </div>
+
   </div>
 
   <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
